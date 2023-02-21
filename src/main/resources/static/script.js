@@ -7,9 +7,14 @@ $(document).ready((e) => {
     connect();
   });
 
+  
+  
   $("#send-btn").click(() => {
     sendMessage()
   });
+  
+  
+  
   $("#logout").click(() => {
    localStorage.removeItem("name");
    if (stompClient!=null) {
@@ -22,6 +27,8 @@ $(document).ready((e) => {
 
 
 });
+
+
 let stompClient = null;
 
 
